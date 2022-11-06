@@ -1,0 +1,103 @@
+.object
+    margin-top: 100rem
+    display: flex
+    justify-content: center
+    h2
+        text-align: center
+    h3
+        text-align: center
+        margin-top: 45rem
+    &-wrap
+        display: flex
+        flex-direction: column
+        gap: 30rem 0
+        margin-top: 45rem
+        &__top
+            display: flex
+            flex-wrap: nowrap
+            align-items: center
+            gap: 0 30rem
+            .object-item__big
+                    width: 800rem
+            &-small
+                display: flex
+                flex-direction: column
+                gap: 25rem 0
+                .object-item
+                    width: 370rem
+        &__bottom
+            display: flex
+            flex-wrap: wrap
+            gap: 0 20rem
+            .object-item
+                width: calc( ( 100% - 20rem ) / 2 )
+    &-item
+        display: flex
+        flex-direction: column
+        gap: 20rem 0
+        &__video
+            border-radius: 10rem
+            position: relative
+            &-item
+                width: 100%
+                height: auto
+                border-radius: 10rem
+            &-plus
+                width: 76rem
+                height: 76rem
+                border-radius: 100%
+                background: #3C832F
+                box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+                position: absolute
+                transform: translate(-50%, -50%)
+                left: 50%
+                top: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                &::before
+                    content: ''
+                    width: 100%
+                    height: 100%
+                    border-radius: 100%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    background: #3C832F
+                    box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+                    opacity: 0.3
+                    z-index: -1
+                    transform: translate(-50%, -50%)
+                    animation: animate_object 2s infinite 
+                    display: block 
+                img
+                    margin-left: 5rem
+        &__text
+            display: flex
+            justify-content: space-between
+            align-items: center
+            p
+                &:first-child
+                    font-weight: 500
+                    font-size: 18rem
+                    color: #000000
+                &:last-child
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    gap: 0 6rem
+                    span
+                        font-weight: 400
+                        font-size: 18rem
+                        text-align: right
+                        color: #000000
+                    img
+                        width: 16rem
+                        height: 16rem
+@keyframes animate_object
+    0%
+        transform: translate(-50%, -50%) none
+    
+    100%
+        transform: translate(-50%, -50%) scale(2)
+        opacity: 0

@@ -1,0 +1,126 @@
+.popup
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: none
+    justify-content: center
+    align-items: center
+    z-index: 20
+    &-before
+        width: 100%
+        height: 100%
+        position: fixed
+        left: 0
+        right: 0
+        background: #FFFFFF
+        opacity: 0.5
+        cursor: pointer
+        z-index: -1
+    &-wrap
+        padding: 35rem 30rem 45rem 30rem
+        position: relative
+        z-index: 10
+        background: #FFFFFF
+        border: 1rem solid #EEEEEE
+        box-shadow: 0rem 0rem 100rem rgba(0, 0, 0, 0.05)
+        border-radius: 10rem
+    &-title
+        display: flex
+        gap: 0 34rem
+        align-items: flex-start
+        &__item
+            font-weight: 400
+            font-size: 20rem
+            line-height: 28rem
+            color: #000000
+            width: 264rem
+            span
+                font-weight: 600
+                font-size: 20rem
+                line-height: 28rem
+                color: #000000
+        &__out
+            background: #3C832F
+            box-shadow: inset 0rem 0rem 25rem rgba(255, 255, 255, 0.5)
+            border-radius: 5rem
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 32rem
+            height: 26rem
+            cursor: pointer
+            span
+                background: #FFFFFF
+                border-radius: 2rem
+                width: 2rem
+                height: 20rem
+                transform: rotate(60deg)
+                &:last-child
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    margin-left: -1rem
+                    margin-top: -10rem
+                    transform: rotate(-60deg)
+    &-subtitle
+        font-weight: 400
+        font-size: 14rem
+        color: #000000
+        opacity: 0.6
+        margin-top: 20rem
+    &-form
+        margin-top: 30rem
+        input
+            width: 100%
+            height: 75rem
+            background: #FFFFFF
+            border: 1rem solid #F4F4F4
+            box-shadow: inset 0rem 0rem 20rem rgb(20 20 20 / 4%)
+            border-radius: 5rem
+            display: flex
+            align-items: center
+            justify-content: center
+            font-weight: 400
+            font-size: 16rem
+            color: #666666
+            text-align: center
+            &:nth-of-type(2)
+                margin-top: 15rem
+        button
+            width: 100%
+            height: 75rem
+            margin-top: 15rem
+            font-size: 16rem
+        p
+            font-weight: 400
+            font-size: 12rem
+            line-height: 18rem
+            text-align: center
+            color: #666666
+            width: 219rem
+            display: block
+            margin: 20rem auto 0 auto
+            a
+                font-weight: 400
+                font-size: 12rem
+                line-height: 18rem
+                text-align: center
+                color: #666666
+                position: relative
+                &::before
+                    content: ""
+                    width: 100%
+                    height: 1rem
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    border-bottom: 1rem dashed #646464
+                    transition: 0.4s
+                &:hover
+                    &::before
+                        transform: scaleY(0)
+                        transform-origin: center
+

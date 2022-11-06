@@ -1,0 +1,370 @@
+.quiz
+    margin-top: 200rem
+    display: flex
+    justify-content: center
+    h3
+        font-weight: 600
+        color: #FFFFFF
+        padding: 15rem 27rem
+        background: #3C832F
+        box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+        border-radius: 5rem
+        text-align: center
+        width: max-content
+        margin: 0 auto
+    h2
+        margin-top: 35rem
+        color: #000
+        text-align: center
+    &-wrap
+        margin-top: 55rem
+        padding: 50rem 70rem
+        border: 1rem solid #E7E7E7
+        border-radius: 10rem
+        background: #fff
+        display: flex
+        gap: 0 45rem
+        &__quest
+            width: 625rem
+        &__info
+            padding: 35rem 45rem
+            background: #F7F7F7
+            border-radius: 10rem
+            width: 390rem
+        &__result
+            background: url(../img/quiz/bg.jpg) center no-repeat
+            background-size: contain
+    &-total
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__num
+            font-weight: 600
+            font-size: 12rem
+            color: #000000
+            opacity: 0.6
+            &-result
+                display: none
+                width: 235rem
+        &__percent
+            background: #F7F7F7
+            border-radius: 30rem
+            width: 528rem
+            height: 12rem
+            &-load
+                width: 16.66666666666667%
+                height: 100%
+                background: repeating-linear-gradient(-45deg, #ACCAA6 0 3rem, #8FAE8A 3rem 6rem)
+                border-radius: 30rem
+                transition: .4s
+    &-step
+        margin-top: 25rem
+        height: 498rem
+        &__item
+            display: none
+            &:nth-of-type(2), &:nth-of-type(5)
+                .quiz-step__item-choose
+                    gap: 10rem 10rem
+                    label
+                        width: calc( ( 100% - 10rem ) / 2)
+                        display: flex
+                        align-items: center
+                        justify-content: left
+                        padding: 11rem 23rem
+                        background: #FFFFFF
+                        border: 1rem solid #E8E8E8
+                        border-radius: 10rem
+                        gap: 0 20rem
+                    .quiz-step__item-choose-img-check
+                        position: static
+                        width: 30rem
+                        height: 30rem
+                        margin-right: 0
+                    .quiz-step__item-choose-title
+                        margin-top: 0
+            &:nth-of-type(3), &:nth-of-type(4)
+                .quiz-step__item-choose
+                    gap: 15rem 15rem
+                    .quiz-step__item-choose-wrap
+                        width: 305rem
+                        display: flex
+                        flex-direction: column
+                        gap: 10rem 10rem
+                    label
+                        width: 100%
+                        display: flex
+                        align-items: center
+                        justify-content: left
+                        padding: 11rem 23rem
+                        background: #FFFFFF
+                        border: 1rem solid #E8E8E8
+                        border-radius: 10rem
+                        gap: 0 20rem
+                    .quiz-step__item-choose-img-check
+                        position: static
+                        width: 30rem
+                        height: 30rem
+                        margin-right: 0
+                    .quiz-step__item-choose-title
+                        margin-top: 0
+                    img
+                        width: 300rem
+                        height: 334rem
+                        border-radius: 10rem
+            &:nth-of-type(7)
+                width: 300rem
+            &-active
+                display: block
+            &-title
+                font-weight: 600
+                font-size: 24rem
+                color: #000000
+            &-choose
+                display: flex
+                flex-wrap: wrap
+                gap: 35rem 11rem
+                margin-top: 30rem
+                label
+                    width: 200rem
+                    cursor: pointer
+                    input
+                        display: none
+                    .quiz-step__item-choose-img-check-active svg
+                        background: #FFF3E4
+                    .quiz-step__item-choose-img-check-active svg path
+                        fill: #E0A968
+                        box-shadow: inset 0rem 0rem 3rem rgba(255, 255, 255, 0.5), inset 0rem 4rem 250rem #E0A968   
+                &-img
+                    position: relative
+                    img
+                        width: 100%
+                        height: auto
+                        object-fit: contain
+                        border-radius: 10rem
+                    &-check
+                        width: 40rem
+                        height: 40rem
+                        background: #FFFFFF
+                        border-radius: 100%
+                        position: absolute
+                        right: 50%
+                        margin-right: -20rem
+                        bottom: -20rem
+                        z-index: 1
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        transition: .4s
+                        svg
+                            padding: 7rem
+                            background: #F7F7F7
+                            border-radius: 100%
+                            width: 30rem
+                            height: auto
+                            transition: .4s
+                            path
+                                fill: #DEDEDE
+                                transition: .4s
+                &-title
+                    font-weight: 400
+                    font-size: 12rem
+                    text-align: center
+                    color: #000000
+                    margin-top: 27rem
+            &-subtitle
+                font-weight: 500
+                font-size: 22rem
+                color: #000000
+                margin-top: 39rem
+            &-soc
+                display: flex
+                flex-wrap: wrap
+                gap: 6rem 6rem
+                margin-top: 25rem
+                &__item
+                    width: calc( ( 100% - 6rem ) / 2 )
+                    padding: 20rem 0 20rem 20rem
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    justify-content: left
+                    gap: 0 10rem
+                    background: #FFFFFF
+                    border: 1rem dashed #E6E6E6
+                    border-radius: 5rem
+                    img
+                        width: 16rem
+                        height: 16rem
+                    p
+                        font-weight: 400
+                        font-size: 16rem
+                        color: #000000
+                        opacity: 0.6
+            &-form
+                margin-top: 15rem
+                display: flex
+                flex-direction: column
+                gap: 15rem 0
+                input
+                    padding: 30rem 15rem
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16rem
+                    width: 100%
+                    height: 75rem
+                    display: flex
+                    align-items: center
+                    text-align: center
+                    color: #666666
+                    background: #FFFFFF
+                    border: 1rem solid #F4F4F4
+                    box-shadow: inset 0rem 0rem 20rem rgba(20, 20, 20, 0.04)
+                    border-radius: 5rem
+                button
+                    width: 100%
+                    height: 72rem
+                    font-size: 18rem
+            &-link
+                font-weight: 400
+                font-size: 12rem
+                line-height: 18rem
+                text-align: center
+                color: #666666
+                width: 219rem
+                display: block
+                margin: 30rem auto 0 auto
+                a
+                    font-weight: 400
+                    font-size: 12rem
+                    line-height: 18rem
+                    text-align: center
+                    color: #666666
+                    position: relative
+                    &::before
+                        content: ''
+                        width: 100%
+                        height: 1rem
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        border-bottom: 1rem dashed #646464
+                        transition: .4s
+                    &:hover
+                        &::before
+                                transform: scaleY(0)
+                                transform-origin: center
+
+    &-btns
+        display: flex
+        justify-content: right
+        gap: 0 25rem
+        margin-top: 43rem
+        &__dis
+            display: none
+        button
+            width: calc( ( 100% - 25rem ) / 2)
+            height: 66rem
+            font-size: 14rem
+        &__next
+            pointer-events: none
+            cursor: not-allowed
+            &-active
+                cursor: pointer
+                pointer-events: auto
+        &__prev
+            background: #F8F8F8
+            box-shadow: inset 0rem 0rem 50rem rgba(255, 255, 255, 0.5)
+            border-radius: 5rem
+            color: #959595
+            display: none
+            &:hover
+                box-shadow: none
+                transform: translateY(0rem)
+            &-active
+                display: flex
+    &-info
+        &__architect
+            display: flex
+            gap: 0 30rem
+            align-items: center
+            &-img
+                width: 100rem
+                height: 100rem
+                border-radius: 100%
+            &-text
+                &-item
+                    font-weight: 400
+                    font-size: 14rem
+                    color: #000000
+                &-name
+                    font-weight: 600
+                    font-size: 16rem
+                    line-height: 22rem
+                    color: #000000
+                    margin-top: 7rem
+                &-date
+                    font-style: italic
+                    font-weight: 400
+                    font-size: 12rem
+                    color: #000000
+                    opacity: 0.6
+                    margin-top: 10rem
+        &__separation
+            display: flex
+            align-items: center
+            gap: 0 10rem
+            margin-top: 25rem
+            span
+                width: 40rem
+                height: 1rem
+                background: #ADADAD
+            img
+                width: 14rem
+                height: 14rem
+                opacity: 0.3
+        &__text
+            font-weight: 400
+            font-size: 14rem
+            line-height: 22rem
+            color: #000000
+            margin-top: 12rem
+        &__get
+            margin-top: 35rem
+            &-subtitle
+                font-weight: 400
+                font-size: 20rem
+                color: #000000
+                span
+                    font-weight: 600
+                    font-size: 20rem
+                    color: #000000
+                    margin-top: 7rem
+            &-wrap
+                display: flex
+                flex-direction: column
+                gap: 15rem 0
+                margin-top: 25rem
+            &-item
+                width: 100%
+                display: flex
+                gap: 0 4rem
+                align-items: center
+                background: #3C832F
+                box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+                border-radius: 5rem
+                img
+                    width: 66rem
+                    height: 66rem
+                p
+                    font-weight: 600
+                    font-size: 13rem
+                    line-height: 19rem
+                    color: #FFFFFF
+                    width: 194rem
+                    padding: 14rem 0
+
+            
+                    
+
+        

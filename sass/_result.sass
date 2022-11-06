@@ -1,0 +1,153 @@
+.result
+    padding-top: 100rem
+    background: #F7F7F7
+    display: flex
+    justify-content: center
+    h2
+        text-align: center
+    h3
+        text-align: center
+        margin-top: 45rem
+    &-popup
+        margin-top: 36rem
+        background: url(../img/result/bg.png) center bottom no-repeat
+        background-size: cover
+        &__wrap
+            display: flex
+            justify-content: space-between
+            position: relative
+            &-items
+                min-width: 779rem
+                height: 491rem
+                position: relative
+        &__item
+            display: flex
+            align-items: center
+            gap: 0 21rem
+            position: relative
+            z-index: 3
+            &:nth-of-type(1)
+                top: 25rem
+                left: 256rem
+            &:nth-of-type(2)
+                top: -20rem
+                left: 739rem
+            &:nth-of-type(3)
+                top: 45rem
+                left: 211rem
+            &:nth-of-type(4)
+                top: -65rem
+                left: 728rem
+            &-plus
+                width: 40rem
+                height: 40rem
+                position: absolute
+                display: flex
+                align-items: center
+                justify-content: center
+                font-family: 'Montserrat'
+                font-style: normal
+                font-weight: 600
+                font-size: 37rem
+                line-height: 36rem
+                letter-spacing: 0.05rem
+                text-transform: uppercase
+                color: #FFFFFF
+                background: #DEA45F
+                box-shadow: inset 0rem 0rem 25rem rgba(255, 255, 255, 0.5)
+                z-index: 1
+                cursor: pointer
+                border-radius: 100%
+                &::before
+                    content: ''
+                    width: 100%
+                    height: 100%
+                    border-radius: 100%
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    background: #DEA45F
+                    opacity: 0.3
+                    box-shadow: inset 0rem 0rem 25rem rgba(255, 255, 255, 0.5)
+                    z-index: -1
+                    transform: translate(-50%, -50%)
+                    animation: animate_result 2s infinite 
+                    display: block 
+            &-title
+                font-weight: 600
+                font-size: 14rem
+                color: #000000
+                width: max-content
+            &-info
+                font-weight: 400
+                font-size: 12rem
+                color: #000000
+                width: max-content
+            &-wrap
+                transform: scale(0)
+                transform-origin: left
+                transition: .4s
+                margin-left: 60rem
+                &-active
+                    transform: scale(1)
+            &-text
+                background: #FFFFFF
+                border-radius: 5rem
+                padding: 18rem 22rem
+                display: flex
+                flex-direction: column
+                gap: 12rem 0
+                position: relative
+                &::before
+                    content: ""
+                    position: absolute
+                    border-style: solid
+                    border-width: 7rem 12rem 7rem 0
+                    border-color: transparent #fff transparent transparent
+                    top: 50%
+                    left: -6rem
+                    transform: translate(-50%, -50%)
+                &::after
+                    content: ''
+                    width: 6rem
+                    height: 100%
+                    background: #E8CAA6
+                    border-radius: 5rem 0rem 0rem 5rem
+                    position: absolute
+                    left: 0
+                    top: 0
+        &__info
+            padding: 40rem 24rem 45rem 40rem
+            background: #72A669
+            box-shadow: inset 0rem 0rem 150rem rgba(255, 255, 255, 0.25)
+            border-radius: 5rem
+            width: 310rem
+            height: max-content
+            z-index: 2
+            &-title
+                font-weight: 600
+                font-size: 22rem
+                color: #FFFFFF
+            &-text
+                font-style: normal
+                font-weight: 400
+                font-size: 14rem
+                line-height: 22rem
+                color: #FFFFFF
+                margin-top: 25rem
+                &:last-child
+                    margin-top: 35rem
+        &__img
+            width: 397rem
+            height: 174rem
+            position: absolute
+            bottom: 0
+            z-index: 1
+            right: 10rem
+@keyframes animate_result
+    0%
+        transform: translate(-50%, -50%) none
+    
+    100%
+        transform: translate(-50%, -50%) scale(2)
+        opacity: 0

@@ -1,0 +1,46 @@
+.nav
+    padding: 14rem 0
+    display: flex
+    justify-content: center
+    ul
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        li
+            position: relative
+            list-style-type: none
+            a
+                font-weight: 400
+                font-size: 14rem
+                letter-spacing: 0.05rem
+                text-transform: uppercase
+                color: #000000
+                opacity: 0.6
+                transition: .4s
+                &:hover
+                    color: #CB924E
+            p
+                position: absolute
+                top: -20rem
+                right: -40rem
+                padding: 2rem 6rem 3rem 5rem
+                background: #448F36
+                border-radius: 3rem
+                display: flex
+                align-items: center
+                justify-content: center
+                span
+                    position: relative
+                    font-weight: 600
+                    font-size: 9rem
+                    color: #FFFFFF
+                    width: max-content
+                    height: 100%
+                    &::after
+                        content: ''
+                        position: absolute
+                        left: 0
+                        bottom: -12rem
+                        border: 4.5rem solid transparent
+                        border-top: 8rem solid #448F36

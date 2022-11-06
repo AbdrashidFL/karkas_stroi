@@ -1,0 +1,239 @@
+.form
+    margin-top: 100rem
+    display: flex
+    justify-content: center
+    h3
+        font-weight: 600
+        color: #FFFFFF
+        padding: 15rem 27rem
+        background: #3C832F
+        box-shadow: inset 0rem 0rem 100rem rgb(255 255 255 / 50%)
+        border-radius: 5rem
+        text-align: center
+        width: max-content
+        margin: 0 auto
+    h2
+        width: 1170rem
+        margin: 35rem auto 0 auto
+        text-align: center
+    &-wrap
+        margin-top: 55rem
+        background: url(../img/form/bg.jpg) center no-repeat
+        background-size: cover
+        padding: 50rem 70rem 50rem 70rem
+        display: flex
+        flex-wrap: nowrap
+        gap: 0 50rem
+        border-radius: 10rem
+    &-info
+        padding-top: 9rem
+        width: 300rem
+        &__title
+            font-weight: 600
+            font-size: 26rem
+            line-height: 32rem
+            color: #000000
+        &__items
+            display: flex
+            flex-direction: column
+            gap: 10rem 0
+            margin-top: 25rem
+            &-block
+                width: 100%
+                height: 66rem
+                display: flex
+                flex-wrap: nowrap
+                align-items: center
+                gap: 0 4rem
+                background: #3C832F
+                box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+                border-radius: 5rem
+                img
+                    width: auto
+                    height: 100%
+                p
+                    padding-right: 7rem
+                    font-weight: 600
+                    font-size: 13rem
+                    line-height: 19rem
+                    color: #FFFFFF
+        &__subtitle
+            font-weight: 500
+            font-size: 20rem
+            line-height: 28rem
+            color: #000000
+            margin-top: 35rem
+        &__soc
+            display: flex
+            align-items: center
+            gap: 0 20rem
+            margin-top: 23rem
+            padding-left: 15rem
+            &-note
+                font-weight: 400
+                font-size: 12rem
+                color: #000000
+                position: relative
+                width: 69rem
+                &::before
+                    content: ''
+                    width: 6rem
+                    height: 6rem
+                    position: absolute
+                    border-radius: 100%
+                    left: -14rem
+                    top: 4rem
+                    background: #51CC3B
+                &::after
+                    content: ''
+                    display: block
+                    width: 6rem
+                    height: 6rem
+                    position: absolute
+                    left: -14rem
+                    top: 4rem
+                    background: #51CC3B
+                    opacity: 0.5
+                    border-radius: 100%
+                    animation: form_animate 2s infinite
+            &-wrap
+                display: flex
+                gap: 0 10rem
+            &-item
+                width: 30rem
+                height: 30rem
+                background: #DEA45F
+                box-shadow: inset 0rem 0rem 5rem rgb(255 255 255 / 50%)
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 7rem
+                border-radius: 100%
+                transition: 0.4s
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+                &:hover
+                    transform: scale(1.1)
+    &-item
+        display: flex
+        flex-direction: column
+        gap: 10rem 0
+        width: 710rem
+        &__info
+            display: flex
+            flex-wrap: wrap
+            gap: 10rem
+            input
+                width: calc( ( 100% - 20rem ) / 3 )
+                height: 62rem
+                background: #FFFFFF
+                border: 1rem solid #F4F4F4
+                box-shadow: inset 0rem 0rem 20rem rgb(20 20 20 / 4%)
+                border-radius: 5rem
+                display: flex
+                align-items: center
+                justify-content: left
+                font-weight: 400
+                font-size: 16rem
+                color: #666666
+                text-align: left
+                padding: 0 30rem
+        &__com
+            width: 100%
+            height: 166rem
+            background: #FFFFFF
+            border: 1rem solid #F4F4F4
+            box-shadow: inset 0rem 0rem 20rem rgb(20 20 20 / 4%)
+            border-radius: 5rem
+            padding: 14rem 30rem
+            font-weight: 400
+            font-size: 16rem
+            display: flex
+            align-items: flex-start
+            font-family: 'Montserrat'
+        &__btns
+            display: flex
+            flex-wrap: wrap
+            gap: 0 10rem
+            position: relative
+            label
+                background: #C7C7C7
+                border-radius: 5rem
+                box-shadow: none
+                width: 400rem
+                position: relative
+                color: #777777
+                height: 75rem
+                cursor: pointer
+                img
+                    width: 15rem
+                    height: 15rem
+                span
+                    font-weight: 600
+                    font-size: 16rem
+                    letter-spacing: 0.05rem
+                    text-transform: uppercase
+
+                    color: #777777
+                &:hover
+                    transform: translateY(0rem)
+                    div
+                        &::before
+                            transform: scaleY(0)
+                            transform-origin: center
+                div
+                    position: relative
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    gap: 0 8rem
+                    &::before
+                        content: ''
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        left: 0
+                        top: 5rem
+                        border-bottom: 1rem solid #777777
+                        transition: .4s
+                input
+                    display: none
+            button
+                width: 300rem
+                height: 75rem
+                font-size: 16rem
+        &__link
+            font-weight: 400
+            font-size: 12rem
+            line-height: 18rem
+            text-align: left
+            color: #666666
+            margin-top: 15rem
+            a
+                font-weight: 400
+                font-size: 12rem
+                line-height: 18rem
+                text-align: center
+                color: #666666
+                position: relative
+                &::before
+                    content: ""
+                    width: 100%
+                    height: 1rem
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    border-bottom: 1rem dashed #646464
+                    transition: 0.4s
+                &:hover
+                    &::before
+                        transform: scaleY(0)
+                        transform-origin: center
+@keyframes form_animate
+    0%
+        transform: none
+    100%
+        transform: scale(3)
+        opacity: 0

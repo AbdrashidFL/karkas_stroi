@@ -1,0 +1,122 @@
+.favorites
+    margin-top: 100rem
+    display: flex
+    justify-content: center
+    h2
+        width: 944rem
+        margin: 0 auto
+        text-align: center
+    &-subtitle
+        font-weight: 300
+        font-size: 22rem
+        text-align: center
+        color: #000000
+        margin-top: 45rem
+        span
+            font-weight: 600
+            font-size: 22rem
+            text-align: center
+            color: #000000
+    &-settings
+        margin-top: 55rem
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        p
+            &:nth-of-type(1)
+                font-weight: 400
+                font-size: 18rem
+                line-height: 24rem
+                text-align: right
+                color: #000000
+                opacity: 0.7
+            &:nth-of-type(2)
+                font-weight: 600
+                font-size: 32rem
+                text-align: center
+                color: #FFFFFF
+                padding: 20rem 37rem
+                background: #DEA45F
+                box-shadow: inset 0rem 0rem 50rem rgba(255, 255, 255, 0.5)
+                border-radius: 5rem
+                margin-left: 35rem
+            &:nth-of-type(3)
+                font-weight: 400
+                font-size: 18rem
+                line-height: 24rem
+                text-align: right
+                color: #000000
+                opacity: 0.7
+                margin-left: 32rem
+        img
+            &:nth-of-type(1)
+                width: 48rem
+                height: 17rem
+                margin-left: 35rem
+            &:nth-of-type(2)
+                width: 64rem
+                height: 64rem
+                margin-left: 13rem
+    &-keyboard
+        width: 100%
+        height: auto
+        margin-top: 35rem
+    &-work
+        margin-top: 80rem
+        &__title
+            font-weight: 600
+            font-size: 26rem
+            color: #000000
+        &__text
+            position: relative
+            overflow: hidden
+            max-height: 130rem
+            margin-top: 30rem
+            transition: .4s
+            &::before
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 100rem
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)
+                transition: .4s
+            &-active
+                max-height: 2000rem
+                transition: .4s
+                &::before
+                    background: none
+                    height: 0
+            p
+                font-weight: 300
+                font-size: 15rem
+                line-height: 24rem
+                color: #000000
+        &__btn
+            font-weight: 400
+            font-size: 14rem
+            letter-spacing: 0.05rem
+            color: #000000
+            position: relative
+            margin-top: 16rem
+            background: none
+            &::before
+                content: ""
+                width: 100%
+                height: 1rem
+                position: absolute
+                left: 0
+                bottom: 0
+                border-bottom: 1rem dashed #646464
+                transition: 0.4s
+            &:hover
+                &::before
+                    transform: scaleY(0)
+                    transform-origin: center
+
+
+                
+        
+

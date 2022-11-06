@@ -1,0 +1,153 @@
+.connection
+    margin-top: 80rem
+    margin-bottom: 80rem
+    display: flex
+    justify-content: center
+    &-con
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-item
+        h2
+            margin-bottom: 40rem
+        iframe
+            width: 390rem
+            height: 260rem
+            border-radius: 10rem
+        &__info
+            &-item
+                display: flex
+                flex-wrap: nowrap
+                align-items: flex-start
+                gap: 0 10rem
+                img
+                    width: 16rem
+                    height: 16rem
+                span
+                    font-weight: 400
+                    font-size: 14rem
+                    line-height: 20rem
+                    color: #000000
+                a
+                    font-weight: 400
+                    font-size: 14rem
+                    color: #000000
+                    position: relative
+                    &::before
+                        content: ""
+                        width: 100%
+                        height: 1rem
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        border-bottom: 1rem dashed #000000
+                        transition: 0.4s
+                    &:hover
+                        &::before
+                            transform: scaleY(0)
+                            transform-origin: center
+
+                &:nth-of-type(1)
+                    span
+                        font-size: 18rem
+                &:nth-of-type(2)
+                    margin-top: 22rem
+                &:nth-of-type(3)
+                    margin-top: 22rem
+                &:nth-of-type(4)
+                    margin-top: 22rem
+            &-link
+                font-weight: 600
+                font-size: 12rem
+                letter-spacing: 0.05rem
+                text-transform: uppercase
+                color: #CB924E
+                width: max-content
+                position: relative
+                margin-top: 22rem
+                display: block
+                background: none
+                &::before
+                    content: ""
+                    width: 100%
+                    height: 1rem
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    border-bottom: 1rem dashed #CB924E
+                    transition: 0.4s
+                &:hover
+                    &::before
+                        transform: scaleY(0)
+                        transform-origin: center
+            &-soc
+                display: flex
+                align-items: center
+                gap: 0 20rem
+                margin-top: 27rem
+                padding-left: 15rem
+                &-note
+                    font-weight: 400
+                    font-size: 12rem
+                    color: #000000
+                    position: relative
+                    width: 69rem
+                    &::before
+                        content: ""
+                        width: 6rem
+                        height: 6rem
+                        position: absolute
+                        border-radius: 100%
+                        left: -14rem
+                        top: 4rem
+                        background: #51CC3B
+                    &::after
+                        content: ""
+                        display: block
+                        width: 6rem
+                        height: 6rem
+                        position: absolute
+                        left: -14rem
+                        top: 4rem
+                        background: #51CC3B
+                        opacity: 0.5
+                        border-radius: 100%
+                        animation: connection_animate 2s infinite
+                &-wrap
+                    display: flex
+                    gap: 0 10rem
+                &-item
+                    width: 30rem
+                    height: 30rem
+                    background: #DEA45F
+                    box-shadow: inset 0rem 0rem 5rem rgb(255 255 255 / 50%)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 7rem
+                    border-radius: 100%
+                    transition: 0.4s
+                    &:hover
+                        transform: scale(1.1)
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: contain
+        &:nth-of-type(2)
+            width: 272rem
+        &:nth-of-type(3)
+            width: 390rem
+        &__wrap
+            display: flex
+            flex-wrap: wrap
+            gap: 10rem 10rem
+            img
+                width: calc( ( 100% - 10rem ) / 2 )
+                height: auto
+                border-radius: 10rem
+@keyframes connection_animate
+    0%
+        transform: none
+    100%
+        transform: scale(3)
+        opacity: 0

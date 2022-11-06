@@ -1,0 +1,97 @@
+.fd
+    margin-top: 100rem
+    display: flex
+    justify-content: center
+    h2
+        width: 1029rem
+        margin: 0 auto
+        display: block
+        text-align: center
+    h3
+        text-align: center
+        margin-top: 45rem
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        gap: 15rem 15rem
+        margin-top: 55rem
+    &-item
+        width: calc( ( 100% - 30rem ) / 3 )
+        border-radius: 10rem
+        position: relative
+        padding: 41rem 0 62rem 46rem
+        &:nth-of-type(odd)
+            background: #E0B787
+            .fd-item__num
+                div
+                    background: #fff
+                    &::before
+                        background: #fff
+                span
+                    color: #fff
+            p
+                color: #fff
+        &:nth-of-type(even)
+            background: #F2F2F2
+            .fd-item__num
+                div
+                    background: #7AAA71
+                    &::before
+                        background: #7AAA71
+                span
+                    color: #000000
+            p
+                color: #000000
+        &:nth-of-type(4)
+            p
+                &:nth-of-type(1)
+                    width: 214rem
+        &__num
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            gap: 0 15rem
+            div
+                width: 10rem
+                height: 10rem
+                position: relative
+                z-index: 1
+                border-radius: 100%
+                &::before
+                    content: ''
+                    width: 16rem
+                    height: 16rem
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    opacity: 0.5
+                    z-index: -1
+                    border-radius: 100%
+            span
+                font-weight: 500
+                font-size: 14rem
+                text-transform: uppercase
+                opacity: 0.5
+        p
+            width: 223rem
+            &:nth-of-type(1)
+                font-weight: 600
+                font-size: 18rem
+                line-height: 26rem
+                margin-top: 15rem
+            &:nth-of-type(2)
+                font-weight: 400
+                font-size: 14rem
+                line-height: 20rem
+                margin-top: 10rem
+        img
+            position: absolute
+            object-fit: contain
+            top: 0
+            right: 0
+            height: 100%
+                
+                
+            

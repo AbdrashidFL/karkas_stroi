@@ -1,0 +1,123 @@
+.gallery
+    padding-top: 100rem
+    padding-bottom: 73rem
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F7F7F7 100%)
+    display: flex
+    justify-content: center
+    &-con
+        position: relative
+        z-index: 1
+    &-info
+        h2
+            width: 680rem
+        h3
+            margin-top: 45rem
+            width: 532rem
+        &__advan
+            display: flex
+            flex-direction: column
+            margin-top: 45rem
+            gap: 15rem 0
+            &-item
+                background: #3C832F
+                box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+                border-radius: 5rem
+                width: 380rem
+                height: 100rem
+                display: flex
+                flex-wrap: nowrap
+                gap: 0 15rem
+                align-items: center
+                img
+                    width: auto
+                    object-fit: contain
+                    height: 100%
+                p
+                    padding: 22rem 43rem 22rem 0
+                    font-weight: 600
+                    font-size: 14rem
+                    line-height: 20rem
+                    color: #FFFFFF
+    &-wrap
+        width: 560rem
+        height: 549rem
+        position: absolute
+        right: 165rem
+        bottom: 0
+        &__slider
+            height: 100%
+    &-arrow
+        &__prev, &__next
+            padding: 16rem
+            background: #DEA45F
+            box-shadow: inset 0rem 0rem 50rem rgba(255, 255, 255, 0.5)
+            border-radius: 100%
+            position: absolute
+            cursor: pointer
+            top: 63%
+            margin-top: -27rem
+            z-index: 2
+            img
+                width: 22rem
+                height: 22rem
+                transition: .4s
+            &:hover
+                img
+                    transform: translateX(3rem)
+        &__prev
+            transform: rotate(180deg)
+            right: 259rem
+        &__next
+            right: 0
+    &-slider
+        .owl-stage
+            display: flex
+            align-items: flex-end
+            .owl-item
+                float: left
+        &__item
+            img
+                width: 130rem !important
+                height: 215rem
+                border-radius: 10rem
+            &-active
+                position: relative
+                width: 274rem !important
+                height: 549rem
+                z-index: 1
+                img
+                    width: 274rem !important
+                    height: 549rem
+                    position: absolute
+                    top: 0
+                    left: 0
+                    background: #fff
+        .owl-stage-outer
+            width: 707rem
+    &-note
+        position: absolute
+        top: 120rem
+        left: 674rem
+        width: 126rem
+        span
+            font-weight: 400
+            font-size: 16rem
+            color: #848484
+            position: relative
+            width: 100%
+            display: block
+            &::before
+                content: ''
+                position: absolute
+                width: 60rem
+                height: 60rem
+                right: -50rem
+                bottom: -65rem
+                background: url(../img/gallery/arrow.png) no-repeat
+    &-flower
+        width: 355rem
+        height: 300rem
+        position: absolute
+        left: 613rem
+        top: 190rem
+        z-index: -1

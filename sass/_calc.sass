@@ -1,0 +1,226 @@
+.calc
+    padding-top: 80rem
+    background: #F7F7F7
+    display: flex
+    justify-content: center
+    h3
+        font-weight: 600
+        color: #FFFFFF
+        padding: 15rem 23rem
+        background: #3C832F
+        box-shadow: inset 0rem 0rem 100rem rgb(255 255 255 / 50%)
+        border-radius: 5rem
+        text-align: center
+        width: max-content
+    h2
+        margin-top: 35rem
+        width: 651rem
+    &-con
+        position: relative
+        z-index: 1
+    &-wrap
+        padding: 45rem 55rem 30rem 55rem
+        background: #FFFFFF
+        border-radius: 10rem
+        margin-top: 55rem
+        position: relative
+        z-index: 2
+        &__main
+            display: flex
+            justify-content: space-between
+    &-left
+        width: 620rem
+        display: flex
+        flex-direction: column
+        gap: 47rem 0rem
+    &-right
+        width: 430rem
+    &-item
+        width: 100%
+        padding: 15rem 40rem 24rem 40rem
+        border: 1rem solid #E7E7E7
+        border-radius: 5rem 5rem 3rem 3rem
+        position: relative
+        &__title
+            font-weight: 400
+            font-size: 14rem
+            color: #000000
+            opacity: 0.6
+        &__num
+            font-weight: 500
+            font-size: 22rem
+            color: #000000
+            margin-top: 10rem
+            font-family: 'Montserrat'
+            font-style: normal
+        &__fromTo
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            position: absolute
+            bottom: -25rem
+            left: 0
+            p
+                font-weight: 500
+                font-size: 14rem
+                color: #000000
+                opacity: 0.6
+        &__line
+            position: absolute
+            width: 100%
+            min-height: 6rem
+            max-height: 6rem
+            left: 0
+            bottom: 0
+            background: #E7E7E7
+            border-radius: 10rem
+            box-shadow: none
+            border: none
+    .noUi-handle
+        width: 22rem
+        height: 22rem
+        border-radius: 100%
+        border: 3rem solid rgba(222, 164, 95, 0.5)
+        background: #FFFFFF
+        top: -8rem
+        cursor: pointer
+        right: -11rem
+        &::after, &::before
+            width: 0
+    .noUi-connect
+        background: #DEA45F
+        box-shadow: inset 0 0 20rem rgba(255, 255, 255, 0.5)
+        border-radius: 10rem
+    &-result
+        display: flex
+        flex-direction: column
+        gap: 39rem 0
+        &__num
+            display: flex
+            flex-wrap: wrap
+            gap: 35rem 30rem
+            &-item
+                width: 225rem
+                display: flex
+                flex-direction: column
+                gap: 20rem 0
+                &:nth-of-type(even)
+                    width: 166rem
+                p
+                    font-weight: 400
+                    font-size: 16rem
+                    color: #000000
+                    opacity: 0.6
+                span
+                    font-weight: 500
+                    font-size: 34rem
+                    color: #000000
+                &:nth-of-type(2)
+                    span
+                        color: #6CA162
+        &__btns
+            display: flex
+            flex-direction: column
+            gap: 15rem 0
+            button
+                font-size: 18rem
+                &:first-child
+                    width: 100%
+                    height: 75rem
+                    background: #F8F8F8
+                    border: 1rem solid #EFEFEF
+                    box-shadow: inset 0rem 0rem 70rem rgba(255, 255, 255, 0.5)
+                    border-radius: 5rem
+                    color: #DEA45F
+                    &:hover
+                        box-shadow: none
+                        transform: translateY(0rem)
+                &:last-child
+                    width: 100%
+                    height: 75rem
+    &-note
+        font-weight: 400
+        font-size: 10rem
+        letter-spacing: 0.05rem
+        text-transform: uppercase
+        color: #000000
+        opacity: 0.6
+        margin-top: 30rem
+        text-align: center
+    &-doc
+        width: 170rem
+        height: 170rem
+        background: #FFFFFF
+        border-radius: 100%
+        position: absolute
+        top: -212rem
+        right: 135rem
+        z-index: 2
+        span
+            font-weight: 600
+            font-size: 12rem
+            text-align: center
+            color: #6CA162
+        p
+            &:nth-of-type(1)
+                font-weight: 600
+                font-size: 52rem
+                line-height: 40rem
+                text-align: center
+                text-transform: uppercase
+                background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.2) 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                background-clip: text
+                text-fill-color: transparent
+            &:last-child
+                font-weight: 400
+                font-size: 10rem
+                text-align: center
+                color: #000000
+        &__wrap
+            width: 100%
+            height: 100%
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 8rem 0
+            &::before
+                content: ''
+                position: absolute
+                width: 150rem
+                height: 150rem
+                border: 1rem dashed #E5E5E5
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                border-radius: 100%
+    &-img
+        &__phone
+            position: absolute
+            width: 201rem
+            height: 218rem
+            z-index: -1
+            top: 59rem
+            right: 270rem
+        &__calendar
+            position: absolute
+            width: 211rem
+            height: 116rem
+            z-index: 1
+            top: 160rem
+            right: 22rem
+        &__flower
+            position: absolute
+            width: 290rem
+            height: 258rem
+            top: 213rem
+            right: 270rem
+            z-index: 1
+            
+
+
+    

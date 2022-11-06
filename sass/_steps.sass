@@ -1,0 +1,192 @@
+.steps
+    margin-top: 100rem
+    display: flex
+    justify-content: center
+    h3
+        font-weight: 600
+        color: #FFFFFF
+        padding: 15rem 27rem
+        background: #3C832F
+        box-shadow: inset 0rem 0rem 100rem rgb(255 255 255 / 50%)
+        border-radius: 5rem
+        text-align: center
+        width: max-content
+        margin: 0 auto
+    h2
+        width: 946rem
+        margin: 35rem auto 0 auto
+        text-align: center
+    &-wrap
+        display: flex
+        flex-direction: column
+        gap: 45rem 0
+        background: url(../img/steps/bg.jpg) center no-repeat
+        background-size: cover
+        padding: 45rem 70rem 53rem 70rem
+        border-radius: 10rem
+        margin-top: 55rem
+        &__slider
+            position: relative
+            width: 889rem
+            margin: 0 auto
+    &-items
+        display: flex
+        flex-wrap: wrap
+        gap: 0 8rem
+        z-index: 1
+        position: relative
+        &::before
+            content: ''
+            width: 90%
+            height: 0
+            border: 1rem dashed #000000
+            opacity: 0.2
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            z-index: -1
+        &__block
+            width: calc( ( 100% - 88rem ) / 11 )
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 13rem
+            p
+                &:nth-of-type(1)
+                    font-weight: 500
+                    font-size: 10rem
+                    text-align: center
+                    color: #000000
+                    opacity: 0.6
+                &:nth-of-type(2)
+                    font-weight: 600
+                    font-size: 20rem
+                    color: #ACACAC
+                    background: #D7D7D7
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 42rem
+                    height: 42rem
+                    position: relative
+                    z-index: 1
+                    border-radius: 100%
+                    margin: 0 auto
+                    transition: .4s
+                    &::before
+                        content: ''
+                        width: 52rem
+                        height: 52rem
+                        position: absolute
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%, -50%)
+                        opacity: 0.5
+                        z-index: -1
+                        border-radius: 100%
+                        background: #D1D1D1
+                        opacity: 0.3
+                        box-shadow: inset 0rem 0rem 25rem rgba(255, 255, 255, 0.5)
+                        transition: .4s
+                &:nth-of-type(3)
+                    font-weight: 400
+                    font-size: 8rem
+                    text-align: center
+                    color: #000000
+            &-active
+                p
+                    &:nth-of-type(2)
+                        color: #FFFFFF
+                        background: #72A669
+                        box-shadow: inset 0rem 0rem 25rem rgba(255, 255, 255, 0.5)
+                        &::before
+                            background: #72A669
+                            opacity: 0.3
+                            box-shadow: inset 0rem 0rem 25rem rgba(255, 255, 255, 0.5)
+    &-arrow
+        &__prev, &__next
+            padding: 16rem
+            background: #DEA45F
+            box-shadow: inset 0rem 0rem 50rem rgba(255, 255, 255, 0.5)
+            border-radius: 100%
+            position: absolute
+            cursor: pointer
+            top: 50%
+            margin-top: -27rem
+            z-index: 2
+            img
+                width: 22rem
+                height: 22rem
+                transition: .4s
+            &:hover
+                img
+                    transform: translateX(3rem)
+        &__prev
+            transform: rotate(180deg)
+            left: -84rem
+        &__next
+            right: -84rem
+    &-slider
+        &__item
+            display: flex
+            flex-wrap: nowrap
+            align-items: flex-start
+            gap: 0 40rem
+            img
+                width: 420rem !important
+                height: auto
+                border-radius: 10rem
+            &-info
+                width: 430rem
+                display: flex
+                flex-direction: column
+                gap: 13rem 0
+                p
+                    &:nth-of-type(1)
+                        font-weight: 400
+                        font-size: 24rem
+                        line-height: 36rem
+                        color: #000000
+                        span
+                            font-weight: 600
+                    &:nth-of-type(2)
+                        padding: 11rem 38rem
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        background: #3C832F
+                        box-shadow: inset 0rem 0rem 50rem rgba(255, 255, 255, 0.5)
+                        border-radius: 5rem
+                        font-weight: 600
+                        font-size: 12rem
+                        letter-spacing: 0.05rem
+                        text-transform: uppercase
+                        color: #FFFFFF
+                        width: max-content
+                    &:nth-of-type(3)
+                        font-weight: 400
+                        font-size: 14rem
+                        line-height: 22rem
+                        color: #000000
+                div
+                    display: flex
+                    flex-direction: column
+                    gap: 14rem 0
+                    span
+                        font-weight: 400
+                        font-size: 12rem
+                        color: #000000
+                        padding-left: 24rem
+                        position: relative
+                        line-height: 15rem
+                        &::before
+                            content: ''
+                            width: 12rem
+                            height: 12rem
+                            background: url(../img/steps/icon.png)
+                            background-size: cover
+                            position: absolute
+                            left: 0
+                            top: 2rem
+                

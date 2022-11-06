@@ -1,0 +1,186 @@
+.project
+    margin-top: 100rem
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F7F7F7 100%)
+    display: flex
+    justify-content: center
+    h2
+        text-align: center
+    h3
+        margin-top: 45rem
+        text-align: center
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+        gap: 20rem 20rem
+        align-items: flex-start
+        margin-top: 55rem
+    &-item
+        width: calc( ( 100% - 20rem ) / 2 )
+        position: relative
+        &__note
+            padding: 10rem 16rem
+            font-weight: 600
+            font-size: 16rem
+            text-transform: uppercase
+            color: #FFFFFF
+            box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+            border-radius: 5rem
+            position: absolute
+            left: 40rem
+            top: 26rem
+        &:nth-of-type(1) .project-item__note
+            background: #FF1F1F
+        &:nth-of-type(2) .project-item__note
+            background: #231FFF
+        &:nth-of-type(3) .project-item__note
+            background: #FF1F1F
+        &:nth-of-type(4) .project-item__note
+            background: #C7BF11
+        &:nth-of-type(5) .project-item__note
+            background: #FF1F1F
+        &:nth-of-type(6) .project-item__note
+            background: #FF1F1F
+        &__img
+            width: 100%
+            height: auto
+            border-radius: 10rem 10rem 0 0
+        &__wrap
+            padding: 35rem 55rem 40rem 55rem
+            background: #FFFFFF
+            box-shadow: 0 3rem 100rem rgba(20, 20, 20, 0.03)
+            border-radius: 10rem
+            display: flex
+            flex-direction: column
+            gap: 25rem 25rem
+        &__info
+            &-title
+                display: flex
+                flex-direction: column
+                gap: 18rem 18rem
+                p
+                    &:first-child
+                        font-weight: 600
+                        font-size: 22rem
+                        color: #000000
+                        width: max-content
+                    &:last-child
+                        font-weight: 400
+                        font-size: 16rem
+                        line-height: 24rem
+                        color: #000000
+                        max-width: 100%
+                        min-width: 400rem
+            &-about
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                gap: 8.75rem 8.75rem
+                p
+                    font-weight: 600
+                    font-size: 12rem
+                    display: flex
+                    align-items: center
+                    text-align: center
+                    letter-spacing: 0.05rem
+                    text-transform: uppercase
+                    color: #969696
+                    padding: 11rem 14rem
+                    background: #F8F8F8
+                    box-shadow: inset 0rem 0rem 50rem rgba(255, 255, 255, 0.5)
+                    border-radius: 5rem
+            &-num
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                &-item
+                    display: flex
+                    flex-direction: column
+                    gap: 9rem 9rem
+                    p
+                        &:first-child
+                            font-weight: 400
+                            font-size: 12rem
+                            color: #000000
+                            opacity: 0.6
+                        &:last-child
+                            font-weight: 500
+                            font-size: 24rem
+                            letter-spacing: 0.05rem
+                            color: #000000
+            &-fd
+                display: flex
+                flex-wrap: wrap
+                gap: 15rem 15rem
+            &-btns
+                &-wrap
+                    display: flex
+                    flex-direction: column
+                    gap: 20rem 20rem
+                    p
+                        &:last-child
+                            font-weight: 400
+                            font-size: 12rem
+                            color: #000000
+                            display: flex
+                            flex-wrap: wrap
+                            align-items: center
+                            gap: 6rem 6rem
+                            span
+                                font-weight: 600
+                                font-size: 16rem
+                                color: #6CA162
+                    button
+                        &:nth-of-type(2)
+                            font-weight: 600
+                            font-size: 12rem
+                            letter-spacing: 0.05rem
+                            text-transform: uppercase
+                            color: #CB924E
+                            width: max-content
+                            margin: 0 auto
+                            position: relative
+                            background: none
+                            &::before
+                                content: ''
+                                width: 100%
+                                height: 1rem
+                                position: absolute
+                                left: 0
+                                bottom: 0
+                                border-bottom: 1rem dashed #CB924E
+                                transition: .4s
+                            &:hover
+                                &::before
+                                        transform: scaleY(0)
+                                        transform-origin: center
+                &-price
+                    display: flex
+                    align-items: center
+                    justify-content: left
+                    gap: 14rem 14rem
+                    width: 215rem
+                    background: #3C832F
+                    box-shadow: inset 0rem 0rem 100rem rgba(255, 255, 255, 0.5)
+                    border-radius: 5rem
+                    padding: 9.5rem 20rem
+                    img
+                        width: 28rem
+                        height: 28rem
+                    &-text
+                        display: flex
+                        flex-direction: column
+                        gap: 4rem 4rem
+                        p
+                            &:first-child
+                                font-weight: 400
+                                font-size: 10rem
+                                color: #FFFFFF
+                            &:last-child
+                                font-weight: 600
+                                font-size: 16rem
+                                color: #FFFFFF
+                    &-item
+                        width: 250rem
+                        height: 55rem
+                        font-size: 14rem
+
